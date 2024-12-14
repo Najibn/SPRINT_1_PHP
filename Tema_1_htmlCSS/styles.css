@@ -1,0 +1,149 @@
+* {
+	padding: 10px;
+	margin: 10px;
+	box-sizing: border-box;
+}
+
+.padre {
+	display: flex;
+	flex: 1;
+	max-width: 1200px;
+	flex-flow: column nowrap;
+	margin: auto;
+
+}
+
+.header {
+	display: flex;
+	flex-flow: column nowrap;
+	border: 10px;
+	background-color: black;
+
+}
+
+.menu {
+	background-color: rgb(63, 61, 61);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.logo,
+.nav,
+.social {
+	background-color: red;
+}
+
+.logo {
+
+	flex: 1;
+}
+
+.nav {
+
+	flex: 3;
+}
+
+.social {
+
+	flex: 1;
+}
+
+.principal {
+	display: flex;
+	background-color: orange;
+}
+
+.banner {
+	display: flex;
+	background-color: gold;
+	flex: 1;
+}
+
+.section {
+	display: flex;
+	background-color: black;
+	flex-direction: row;
+	min-height: 250px;
+}
+
+.articulos {
+	display: flex;
+	flex: 3 1 auto;
+	background-color: rgb(16, 73, 109);
+	flex-flow: row wrap;
+}
+
+.article {
+	background-color: rgb(20, 66, 218);
+	display: flex;
+	flex: 1 1 40%;
+
+}
+
+.navegacion {
+	background-color: rgb(82, 122, 175);
+	display: flex;
+	flex: 1 1 100%;
+}
+
+
+.aside {
+	display: flex;
+	flex: 1 1 auto;
+	background-color: rgb(186, 48, 48);
+	flex-flow: column nowrap;
+
+}
+
+.publicidad {
+	display: flex;
+	flex: 1;
+	background-color: yellow;
+	justify-self: flex-start;
+	max-height: 40px;
+}
+
+.footer {
+	display: flex;
+	flex: 1 1 auto;
+	flex-flow: column nowrap;
+	background-color: black;
+}
+
+.pie {
+	display: flex;
+	flex: 1 1 auto;
+	background-color: rgb(215, 215, 89);
+}
+
+
+@media all and (max-width: 800px) {
+	.section {
+		flex-direction: column;
+	}
+
+	.menu {
+		display: flex;
+		flex: 1 1 auto;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.logo {
+		width: 97%;
+	}
+
+	.nav {
+		width: 97%;
+	}
+
+	.social {
+		width: 97%;
+	}
+}
+@media all and (max-width: 600px) {
+	.articulos {
+		flex-direction: column;
+	}
+}
